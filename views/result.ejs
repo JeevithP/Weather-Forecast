@@ -8,9 +8,17 @@
 </head>
 <body>
     <div class="heading">
-        <img src="/cloudy-day.png" alt="icon" class="cloud-icon">
-        <h1> Weather Forecast Website</h1>
+        <div class="centered-content">
+            <img src="/cloudy-day.png" alt="Weather Image" class="cloud-icon">
+            <h1>Weather Forecast</h1>
+        </div>
+        <div>
+            <form action="/home" method="post">
+                <button class="home-button" type="submit">Home</button>
+            </form>
+        </div>
     </div>
+    
     <div class="result">
         <div class="city-heading">
             <h2><%= city %></h2>
