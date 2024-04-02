@@ -10,14 +10,6 @@ body{
     background-image: url("/weather.jpg");
     background-size:cover;
 }
-.heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height: 50px;
-    width: 100%;
-}
 .cloud-icon{
     height: 35px;
     width: 35px;
@@ -102,4 +94,39 @@ body{
 }
 .time{
     font-weight: bolder;
+}
+.heading{
+    display: flex;
+    justify-content: space-between; /* Aligns items at start and end */
+    align-items: center; /* Centers items vertically */
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+
+.centered-content {
+    display: flex;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.home-button{
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 5%;
+    height: 30px;
+    background-color: cornflowerblue;
+}
+.home-button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.home-heading{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
