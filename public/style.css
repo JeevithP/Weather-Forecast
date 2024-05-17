@@ -58,8 +58,8 @@ body{
     margin-bottom: 15px;
 }
 .result{
-    height: 500px;
-    width: 650px;
+    height: 100%;
+    width: 50%;
     background-color: white;
     border-radius: 5%;
     display: flex;
