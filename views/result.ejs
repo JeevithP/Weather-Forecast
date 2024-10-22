@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="heading">
+        <div class="centered-content">
+            <img src="/cloudy-day.png" alt="Weather Image" class="cloud-icon">
+            <h1>Weather Forecast</h1>
+        </div>
+        <div>
+            <form action="/home" method="post">
+                <button class="home-button" type="submit">Home</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="result">
+        <div class="city-heading">
+            <h2><%= city %></h2>
+        </div>
+        <div class="lat-lon">
+            <h4>lattitude = <%= lat %>  longitude = <%= lon %></h4>
+        </div>
+        <div class="weather-info">
+            <ol>
+                <% for(let i = 1; i < weatherData.length; i += 2) { %>
+                    <li><span class="time"><%= weatherData[i].dateTime %></span>
+
+                        <ul class="ul-list">
+                            <li class="winfo">Temperature = <%=(weatherData[i].temperature - 273).toFixed(2)%> C</li>
+                            <li class="winfo">Humidity = <%= weatherData[i].humidity %> %</li>
+                            <li class="winfo">Chances Of Rain = <%= Number.isFinite(weatherData[i].pop) ? weatherData[i].pop*100 + ' %' : 'N/A' %></li>
+                            <li class="winfo">Weather Description = <%= weatherData[i].weatherDescription %></li>
+                        </ul>
+                    </li>
+                <% } %>
+                
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

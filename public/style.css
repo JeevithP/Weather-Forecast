@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-style: italic;
+    text-align: center;
+}
+body{
+    background-image: url("/weather.jpg");
+    background-size:cover;
+}
+.cloud-icon{
+    height: 35px;
+    width: 35px;
+}
+.container{
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+    margin-top: 5%;
+    border-radius: 5%;
+}
+.city-input{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    height: 28px;
+    border: 2px solid black;
+}
+#city-submit{
+    margin-left: 35%;
+    width: 80px;
+    height: 25px;
+    background-color: lightblue;
+    border-radius: 10%;
+}
+#city-submit:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.days-input{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    height: 28px;
+    border: 2px solid black;
+}
+.city-heading{
+    margin-bottom: 15px;
+}
+.days-heading{
+    margin-bottom: 15px;
+}
+.result{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 25%;
+    background-color: antiquewhite;
+}
+.info{
+    font-weight:bold;
+    padding: 8px;
+}
+.error-msg{
+    font-style: italic;
+    color: red;
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.suggestion{
+    font-style: italic;
+    color: green;
+}
+.ul-list{
+    margin-left: 10%;
+}
+.time{
+    font-weight: bolder;
+}
+.heading{
+    display: flex;
+    justify-content: space-between; /* Aligns items at start and end */
+    align-items: center; /* Centers items vertically */
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+
+.centered-content {
+    display: flex;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.home-button{
+    width: 70px;
+    margin-right: 20px;
+    border-radius: 5%;
+    height: 30px;
+    background-color: cornflowerblue;
+}
+.home-button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.home-heading{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorMessage{
+    text-align: center;
+}

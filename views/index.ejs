@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="home-heading">
+        <img src="/cloudy-day.png" alt="weather-icon" class="cloud-icon">
+        <h1>Weather Forecast</h1>
+    </div>
+    <div class="container">
+        <div class="input">
+            <form action="/submit" method="post">
+                <h2 class="city-heading">Enter the city Name</h2>
+                <input type="text" placeholder="Enter city name" class="city-input" name="city">
+                <h2 class="days-heading">Forecast Day</h2>
+                <p class="info">(1 is the present day and 5 is 5th day from today)</p>
+                <input type="text" placeholder="Enter No. of Days b/w 1 to 5" class="days-input" name="days">
+                <button class="submit-bt" type="submit" id="city-submit">Submit</button>
+                <br>
+                <br>
+                <div class="errorMessage">
+                    <% if (errorMessage!=null) { %>
+                        <span style="color: red;"><%= errorMessage %></span>
+                    <% } %>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
